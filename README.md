@@ -14,34 +14,11 @@
 
 ## We want to create basic sales order application using RAP
 
-[Create Database Table](https://developers.sap.com/tutorials/abap-environment-create-table..html)
+[Create Data Dictionary Objects](https://github.com/manojtvarma/RAP/tree/main/data_dictionary)
 
-* Z01_MATERIAL
-```
-@EndUserText.label : 'Material'
-@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-@AbapCatalog.tableCategory : #TRANSPARENT
-@AbapCatalog.deliveryClass : #A
-@AbapCatalog.dataMaintenance : #RESTRICTED
-define table z01_material {
+Create CDS View (Basic View)
 
-  key client      : abap.clnt not null;
-  key material_id : z01_material_id not null;
-  description     : z01_description;
-  category        : z01_material_category;
-  measure_unit    : z01_unit;
-  @Semantics.quantity.unitOfMeasure : 'z01_material.weight_unit'
-  weight          : z01_weight;
-  weight_unit     : z01_unit;
-  @Semantics.amount.currencyCode : 'z01_material.currency'
-  price           : z01_amount;
-  currency        : z01_currency;
 
-}
-```
-* Z01_PARTNER
-* Z01_SO_HEADER
-* Z01_SO_ITEM
 
 
 
