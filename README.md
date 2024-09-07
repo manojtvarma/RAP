@@ -17,7 +17,7 @@
 [Create Database Table](https://developers.sap.com/tutorials/abap-environment-create-table..html)
 
 * Z01_MATERIAL
-```abap
+```
 @EndUserText.label : 'Material'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
